@@ -14,7 +14,8 @@
 // Input: nums = [1,2,3,1,1,3]
 // Output: 4
 // Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
-Let us first approach Brute Force.
+
+//first approach Brute Force.
 
 int ans =0;
 for(int i=0;i<nums.length;i++) {
@@ -25,7 +26,7 @@ for(int i=0;i<nums.length;i++) {
 	 }
 }
 return ans;
-}
+
 
 //Now as we see the constraint it is mentioned that 1<=nums[i]<=100, So to optimize our solution, let us have a frequency array for length 101 and then iterate nums array from left to right, and add if the frequency is greater than one add the frequency to the answer.
 
