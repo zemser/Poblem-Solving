@@ -1,14 +1,38 @@
-class LinkedList {
-    Node head; // head of the list
+package com.company;
 
-    static class Node {
-        int data;
-        Node next;
+import javax.sound.sampled.Line;
 
-        // Constructor to create a new node
-        // Next is by default initialized ass null
-        Node(int d) {
-        data = d; 
-        }
-    }
+public class LinkList {
+     Node head; // head of list
+
+     // Linked list Node.
+     // This inner class is made static
+     // so that main() can access it
+     static class Node {
+
+          int data;
+          Node next;
+
+          // Constructor
+          Node(int d) {
+               data = d;
+               next = null;
+          }
+
+     }
+     public static void printList(LinkList list)
+     {
+          Node currNode = list.head;
+
+          System.out.print("LinkedList: ");
+
+          // Traverse through the LinkedList
+          while (currNode != null) {
+               // Print the data at current node
+               System.out.print(currNode.data + " ");
+
+               // Go to next node
+               currNode = currNode.next;
+          }
+     }
 }
