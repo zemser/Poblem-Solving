@@ -1,10 +1,10 @@
 import java.util.*;
 
 
-public class lists {
+public class basic {
     public static void main(String args[]) {
         System.out.print("---------------Start-----------------");
-        lists list = new lists();
+        basic list = new basic();
 
         ListNode head = new ListNode(4);
         head.next = new ListNode(2);
@@ -13,8 +13,8 @@ public class lists {
         head.next.next.next.next  = new ListNode(5);
      
         /* Test Desired fucntion */
-        // list.nextLargerNodes(head);
-        list.insertionSortList(head);
+        // basic.nextLargerNodes(head);
+        basic.insertionSortList(head);
         
     }
 
